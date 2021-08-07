@@ -1,0 +1,15 @@
+@import "./calculator.css";
+
+.wrapper {
+  position: relative;
+  /* max-inline-size: 64rem; */
+  margin: auto;
+  background: rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  z-index: 10;
+  border-radius: 0.375rem;
+  backdrop-filter: blur(15px);
+  border-block-start: 1px solid rgba(255, 255, 255, 0.2);
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}

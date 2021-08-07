@@ -1,3 +1,12 @@
-h1 {
-  color: green;
+@import "./body.css";
+@import "./wrapper.css";
+:root {
+  font-size: 16px;
+  --gris1: #b5b5b5;
+  --gris2: #dcdcdc;
+  --white: #ffffff;
+  --backgroundTextContent: linear-gradient(to bottom, #bc4e9c, #f80759);
+  --backgroundBody: #091921;
+  --baseFontFamily: "Poppins", cursive, arial, Helvetica, sans-serif;
+  --textFont: bold 60px/7.5rem var(--baseFontFamily);
 }

@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background: var(--backgroundBody);
+  font-family: var(--baseFontFamily);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-block-size: 100vh;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  background: linear-gradient(to bottom, #7a072e, #ff0080);
+  clip-path: circle(22% at 30% 20%);
+}
+body::after {
+  content: "";
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  background: linear-gradient(to top, #081600, #8cff00);
+  clip-path: circle(22% at 70% 80%);
+  /* border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; */
+}
