@@ -1,3 +1,5 @@
+@import "./wrapper.css";
+
 body {
   margin: 0;
   background: var(--backgroundBody);
@@ -16,7 +18,7 @@ body::before {
   inline-size: 100%;
   block-size: 100%;
   background: linear-gradient(to bottom, #7a072e, #ff0080);
-  clip-path: circle(22% at 30% 20%);
+  clip-path: circle(21% at 30% 20%);
 }
 body::after {
   content: "";
@@ -26,6 +28,5 @@ body::after {
   inline-size: 100%;
   block-size: 100%;
   background: linear-gradient(to top, #081600, #8cff00);
-  clip-path: circle(22% at 70% 80%);
-  /* border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; */
+  clip-path: circle(21% at 70% 80%);
 }

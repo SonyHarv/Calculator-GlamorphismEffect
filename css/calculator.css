@@ -1,4 +1,11 @@
+@import "./display.css";
+@import "./button.css";
+
 .calculator {
-  block-size: 500px;
-  inline-size: 300px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 75px);
+  grid-template-rows: 160px repeat(5, 75px);
+  font: var(--textFont);
+  color: var(--white);
 }

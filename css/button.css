@@ -1,0 +1,33 @@
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  border-block-start: 1px solid rgba(255, 255, 255, 0.1);
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.1);
+  font: var(--textFont);
+  font-weight: 400;
+  color: var(--white);
+  cursor: pointer;
+  user-select: none;
+  transition: 0.5s;
+}
+
+button:hover {
+  transition: 0s;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+button:active {
+  background: #14ff47;
+  color: #192f00;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.buttonTextClear {
+  grid-column: span 2;
+}
+
+.buttonTextPlus {
+  grid-row: span 2;
+}

@@ -1,0 +1,21 @@
+.display {
+  grid-column: 1/-1;
+  border-block-end: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 16px;
+  text-align: center;
+  word-break: break-all;
+}
+
+.beforeValue {
+  margin-block-start: 10px;
+  font-size: 35px;
+}
+.afterValue {
+  margin-block-end: 5px;
+  font-size: 28px;
+}

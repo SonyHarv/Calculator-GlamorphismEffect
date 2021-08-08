@@ -4,21 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
   <title>Calculator</title>
 </head>
 <body>
   <div class="wrapper">
     <div class="calculator">
       <div class="display">
-        <div class="beforeValue"></div>
-        <div class="afterValue"></div>
+        <div class="beforeValue">345345434314</div>
+        <div class="afterValue">89</div>
       </div>
-      <div class="buttons">
-        <button class="buttonText">C</button>
+        <button class="buttonTextClear">C</button>
         <button class="buttonText">DEL</button>
         <button class="buttonText">÷</button>
         <button class="buttonText">7</button>
@@ -32,13 +31,20 @@
         <button class="buttonText">1</button>
         <button class="buttonText">2</button>
         <button class="buttonText">3</button>
-        <button class="buttonText">+</button>
-        <button class="buttonText">c</button>
+        <button class="buttonTextPlus">+</button>
         <button class="buttonText">0</button>
         <button class="buttonText">.</button>
         <button class="buttonText"> = </button>
-      </div>
     </div>
   </div>
+  <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".wrapper"), {
+      max: 15,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.2,
+    });
+  </script>
 </body>
 </html>
